@@ -1,1 +1,11 @@
-/*# sourceMappingURL=style.css.map */
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,8 +1,19 @@
-@import './variables/variables';
-@import './mixins/mixins';
+//helper
+@import './helpers/variables';
+@import './helpers/mixins';
+
+//vendors
+
+//base
 @import './base/reset';
+
+//components
 @import './components/button';
+
+//layouts
 @import './layouts/footer';
 @import './layouts/header';
+
+//pages
 @import './pages/about';
 @import './pages/home';
