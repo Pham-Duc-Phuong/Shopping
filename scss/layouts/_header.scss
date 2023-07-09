@@ -1,12 +1,24 @@
-ul{
+ul {
     display: flex;
-   
-}
-li{
-    
-    list-style: none;
-}
-a{
-    text-decoration: none;
+
 }
 
+li {
+
+    list-style: none;
+    padding: 0px 5px;
+}
+
+a {
+    text-decoration: none;
+    @include styleText(rgb(255, 255, 255), 14px, 400)
+}
+
+header {
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    @include styleText(white, 14px, 400)
+}
+.login{
+    padding-top: 8px;
+}
