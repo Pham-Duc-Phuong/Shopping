@@ -15,8 +15,10 @@ a {
 }
 
 header {
-    background-color: #FFE53B;
-    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    background-color: #ff8a1f;
+    background-image: linear-gradient(360deg, #ff8a1f 0%, #ff2600 100%);
+
+
     @include styleText(white, 14px, 400)
 }
 
