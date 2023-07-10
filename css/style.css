@@ -21,8 +21,8 @@ a {
 }
 
 header {
-  background-color: #FFE53B;
-  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+  background-color: #ff8a1f;
+  background-image: linear-gradient(360deg, #ff8a1f 0%, #ff2600 100%);
   color: white;
   font-size: 14px;
   font-weight: 400;
@@ -30,4 +30,24 @@ header {
 
 .login {
   padding-top: 8px;
+}
+
+.loginSearch form {
+  position: relative;
+}
+.loginSearch input {
+  width: 1000px;
+  height: 40px;
+}
+.loginSearch button {
+  background-color: rgb(255, 49, 39);
+  color: white;
+  font-size: 14px;
+  font-weight: 900px;
+  border: 0px;
+  padding: 6px 20px;
+  position: absolute;
+  box-shadow: 0 0 10px 5px rgba(224, 224, 224, 0.5);
+  right: 15px;
+  top: 3.5px;
 }/*# sourceMappingURL=style.css.map */
