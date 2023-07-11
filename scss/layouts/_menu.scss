@@ -7,6 +7,7 @@
         padding-bottom: 15px;
         overflow: hidden;
         box-shadow: 0 0 20px 5px rgba($color: #000000, $alpha: 0.1);
+
         h4 {
             padding-left: 30px;
         }
@@ -22,11 +23,11 @@
     .menu-item {
         padding: 5px;
         background-color: white;
-        border-radius: 8px;
+        // border-radius: 8px;
         box-shadow: 0 0 10px 1px rgba($color: #000000, $alpha: 0.1);
         overflow: hidden;
         position: relative;
-        
+
         &::before {
             content: "";
             width: 50%;
@@ -41,13 +42,15 @@
             transform: skewX(-25deg);
         }
 
-        &:hover{
+        &:hover {
             transform: translateY(-5px);
             transition: all 0.3s linear;
+
             &::before {
-            left: 125%;
-            transition: all 0.5s linear;
-        }}
+                left: 125%;
+                transition: all 0.5s linear;
+            }
+        }
 
         img {
             width: 50px;
@@ -63,7 +66,8 @@
             @include styleText (black, 13px, 400px);
             letter-spacing: 1.5px;
         }
-        p{
+
+        p {
             padding-bottom: 5px;
         }
     }
