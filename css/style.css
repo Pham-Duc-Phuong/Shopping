@@ -34,6 +34,12 @@ header .loginSearch img {
 header .loginSearch button {
   font-size: 35px;
   color: white;
+  font-family: "Fasthand", cursive !important;
+  margin-left: 20px;
+}
+header .loginSearch .header-logo button {
+  margin-right: 20px;
+  margin-left: 0;
 }
 header .loginSearch .navbar {
   padding: 0px, 0px;
@@ -65,7 +71,7 @@ header .loginSearch .navbar button {
   box-shadow: 0 0 10px 3px rgba(224, 224, 224, 0.5);
   transform: translate(0);
   right: 0.5%;
-  top: 9%;
+  top: 8.5%;
 }
 header .loginSearch .navbar li {
   padding: 20px 10px 0 10px;
@@ -144,7 +150,7 @@ header .loginSearch .navbar li {
 .menu .menu-content {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  gap: 7px;
+  gap: 10px;
   padding: 0 10px;
 }
 .menu .menu-item {
@@ -172,7 +178,7 @@ header .loginSearch .navbar li {
 }
 .menu .menu-item:hover::before {
   left: 125%;
-  transition: all 0.75s linear;
+  transition: all 0.5s linear;
 }
 .menu .menu-item img {
   width: 50px;

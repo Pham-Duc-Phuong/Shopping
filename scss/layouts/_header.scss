@@ -5,7 +5,7 @@ header {
 
     ul {
         display: flex;
-        padding-left:0 ;
+        padding-left: 0;
     }
 
     ;
@@ -32,13 +32,23 @@ header {
     }
 
     .loginSearch {
-        img{
+
+        img {
             width: 50px;
         }
 
         button {
             font-size: 35px;
             color: white;
+            font-family: 'Fasthand', cursive !important;
+            margin-left: 20px;
+        }
+
+        .header-logo {
+            button {
+                margin-right: 20px;
+                margin-left: 0;
+            }
         }
 
         .navbar {
@@ -74,9 +84,9 @@ header {
                 box-shadow: 0 0 10px 3px rgba(224, 224, 224, 0.5);
                 transform: translate(0);
                 right: 0.5%;
-                top: 9%;
+                top: 8.5%;
             }
-           
+
             li {
                 padding: 20px 10px 0 10px;
                 line-height: 0px;
