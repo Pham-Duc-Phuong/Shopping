@@ -53,11 +53,14 @@
                         <li><a href="#"><i class="fa-solid fa-circle-question"></i> Hồ Sơ</a></li>
                         <li><a href="#"><i class="fa-solid fa-globe"></i> Tiếng Việt <i
                                     class="fa-solid fa-chevron-down"></i></a></li>
-                        <li><button id="btn-register" class="button-register" type="button" data-bs-toggle="modal"
-                                data-bs-target="#myModal-register">Đăng Ký</button></li>|
-                        <li><button id="btn-login" class="button-login" type="button" data-bs-toggle="modal"
-                                data-bs-target="#myModal-login">Đăng Nhập</button></li>
                     </ul>
+                    <div class="login-btn d-flex justify-content-between align-items-start">
+                        <button id="btn-register" class="button-register" type="button" data-bs-toggle="modal"
+                            data-bs-target="#myModal-register">Đăng Ký</button>|
+                        <button id="btn-login" class="button-login" type="button" data-bs-toggle="modal"
+                            data-bs-target="#myModal-login">Đăng Nhập</button>|
+                        <a href="./customer.html"><button><i class="fa-solid fa-user"></i></button></a>
+                    </div>
                 </div>
             </div>
             <div class="loginSearch d-flex justify-content-between
@@ -570,30 +573,30 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title modal-title-register">Register</h5>
+                        <h5 class="modal-title modal-title-register">Đăng ký</h5>
                     </div>
                     <div class="modal-body">
                         <form action="">
                             <div class="inp">
-                                <i class="fa-solid fa-envelope"></i><input type="text" placeholder="Email">
+                                <i class="fa-solid fa-envelope"></i><input id="email" type="email" placeholder="Email">
                             </div>
                             <div class="inp">
-                                <i class="fa-solid fa-phone"></i><input type="number" placeholder="Phone">
+                                <i class="fa-solid fa-phone"></i><input id="phone" type="number" placeholder="Số điện thoại">
                             </div>
                             <div class="inp">
-                                <i class="fa-solid fa-user"></i><input type="text" placeholder="User Name">
+                                <i class="fa-solid fa-user"></i><input id="account" type="text" placeholder="Tên đăng nhập">
                             </div>
                             <div class="inp">
-                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Password">
+                                <i class="fa-solid fa-key"></i><input id="pass" type="text" placeholder="Mật khẩu">
                             </div>
                             <div class="inp">
-                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Enter the password">
+                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Nhập lại mật khẩu">
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Register</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-active btn-primary">Đăng ký</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
                     </div>
                 </div>
             </div>
@@ -602,21 +605,21 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title modal-title-login">login</h5>
+                        <h5 class="modal-title modal-title-login">Đăng nhập</h5>
                     </div>
                     <div class="modal-body">
                         <form action="">
                             <div class="inp">
-                                <i class="fa-solid fa-user"></i><input type="text" placeholder="User Name">
+                                <i class="fa-solid fa-user"></i><input type="text" placeholder="Tên đăng nhập">
                             </div>
                             <div class="inp">
-                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Password">
+                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Mật khẩu">
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Login</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-active btn-primary">Đăng nhập</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
                     </div>
                 </div>
             </div>

@@ -28,10 +28,13 @@ header {
         padding-top: 8px;
     }
 .login_right{
+    display: flex;
+    align-self: center;
     button{
         @include styleText(rgb(255, 255, 255), 14px, 400);
         background-color: transparent;
         border: 0;
+        padding: 0 5px;
     }
 }
     .loginSearch {
