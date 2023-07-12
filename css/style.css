@@ -413,7 +413,7 @@ header .loginSearch .navbar li {
 }
 
 .manage {
-  padding: 143px 0;
+  padding: 150px 0;
 }
 .manage .container {
   background-color: white;
@@ -454,10 +454,19 @@ header .loginSearch .navbar li {
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
   transition: all 0.5s;
 }
-.manage .manage-content th {
-  padding: 20px 60px;
+.manage .manage-content {
+  padding-bottom: 40px;
 }
-.manage .manage-content #btn-delete {
+.manage .manage-content th {
+  padding: 20px 45px;
+}
+.manage .manage-content td {
+  padding: 20px 45px;
+}
+.manage .manage-content tr {
+  padding: 20px;
+}
+.manage .manage-content .button-delete {
   background-color: #ff813d;
   background-image: linear-gradient(147deg, #ff7f3b 0%, #FF2525 74%);
   border-radius: 8px;
@@ -470,12 +479,12 @@ header .loginSearch .navbar li {
   font-size: 15px;
   font-weight: 700;
 }
-.manage .manage-content #btn-delete:hover {
+.manage .manage-content .button-delete:hover {
   background-color: hsl(21, 100%, 62%);
   background-image: linear-gradient(147deg, hsla(21, 100%, 62%, 0.1) 0%, hsla(0, 100%, 57%, 0.1) 74%);
   color: black;
 }
-.manage .manage-content #btn-edit {
+.manage .manage-content .button-edit {
   background-color: rgb(251, 215, 0);
   background-image: linear-gradient(90deg, #fbd700 0%, rgb(247, 168, 28) 100%);
   border-radius: 8px;
@@ -483,12 +492,11 @@ header .loginSearch .navbar li {
   padding: 10px 10px;
   margin-right: 20px;
   color: white;
-  margin-left: 20px;
   color: rgb(255, 255, 255);
   font-size: 15px;
   font-weight: 700;
 }
-.manage .manage-content #btn-edit:hover {
+.manage .manage-content .button-edit:hover {
   background-color: #fbd700;
   background-image: linear-gradient(90deg, hsla(51, 100%, 49%, 0.1) 0%, hsla(38, 93%, 54%, 0.1) 100%);
   color: black;

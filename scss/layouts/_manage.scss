@@ -40,10 +40,17 @@
     }
 
     .manage-content {
+        padding-bottom: 40px ;
         th {
-            padding: 20px 60px;
+            padding: 20px 45px;
         }
-        #btn-delete {
+        td {
+            padding: 20px 45px;
+        }
+        tr{
+            padding: 20px;
+        }
+        .button-delete {
             background-color: #ff813d;
             background-image: linear-gradient(147deg, #ff7f3b 0%, #FF2525 74%);
             border-radius: 8px;
@@ -55,13 +62,13 @@
             @include styleText (rgb(255, 255, 255), 15px, 700);
 
             &:hover {
-                background-color: hsl(21, 100%, 62%);
+                background-color: hsl(21, 100%, 62%);   
                 background-image: linear-gradient(147deg, hsl(21, 100%, 62%, 0.1) 0%, hsl(0, 100%, 57%, 0.1) 74%);
                 color: black;
             }
         }
 
-        #btn-edit {
+        .button-edit {
             background-color: rgb(251, 215, 0);
             background-image: linear-gradient(90deg, #fbd700 0%, rgb(247, 168, 28) 100%);
             border-radius: 8px;
@@ -69,7 +76,6 @@
             padding: 10px 10px;
             margin-right: 20px;
             color: white;
-            margin-left: 20px;
             @include styleText (rgb(255, 255, 255), 15px, 700);
             
             &:hover {

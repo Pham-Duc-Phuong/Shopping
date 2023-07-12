@@ -102,18 +102,16 @@
                             <i class="fa-solid fa-box-open"></i><input type="text" placeholder="Name product">
                         </div>
                         <div class="inp">
+                            <i class="fa-brands fa-shopify"></i><input type="number" placeholder="quantity">
+                        </div>
+                        <div class="inp">
                             <i class="fa-solid fa-dollar-sign"></i><input type="number" placeholder="Price">
                         </div>
                         <div class="inp">
                             <i class="fa-solid fa-camera-retro"></i><input type="text" placeholder="Photo">
                         </div>
                         <div class="inp">
-                            <label for="brand"><i class="fa-regular fa-comments"></i></label>
-                            <select name="brand" id="">
-                                <option value="Status">Status</option>
-                                <option value="Stocking">Stocking</option>
-                                <option value="Out Of Stock">Out Of Stock</option>
-                            </select>
+                            <i class="fa-regular fa-comments"></i></i><input type="text" placeholder="Descreption">
                         </div>
                         <div class="inp">
                             <label for="brand"><i class="fa-solid fa-signature"></i></label>
@@ -145,12 +143,14 @@
                         <tr>
                             <th>#</th>
                             <th>Name</th>
-                            <th>Price</th>
                             <th>Photo</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
                             <th>Status</th>
-                            <th><i class="fa-solid fa-gear"></i> Action
-                                <button id="btn-edit"><i class="fa-solid fa-pen"></i> Edit</button>
-                                <button id="btn-delete"><i class="fa-solid fa-trash-can"></i> Delete</button>
+                            <th><i class="fa-solid fa-gear"></i> Action</th>
+                            <th>
+                                <button id="btn-edit" class="button-edit"><i class="fa-solid fa-pen"></i> Edit</button>
+                                <button id="btn-delete" class="button-delete"><i class="fa-solid fa-trash-can"></i> Delete</button>
                             </th>
                         </tr>
                     </thead>
