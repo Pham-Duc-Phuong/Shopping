@@ -73,8 +73,8 @@ footer .footer-post input {
 }
 footer .footer-post button {
   border-radius: 0 30px 30px 0;
-  background-color: #4158D0;
-  background-image: linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-color: #003ac5;
+  background-image: linear-gradient(45deg, #003ac5 0%, #FC00FF 100%);
   border: 0px;
   padding-left: 20px;
   padding-right: 20px;
@@ -410,6 +410,138 @@ header .loginSearch .navbar li {
   color: black;
   font-size: 15px;
   font-weight: 700;
+}
+
+.manage {
+  padding: 143px 0;
+}
+.manage .container {
+  background-color: white;
+  padding: 0;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.manage .manage-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  padding: 20px 0;
+  border-radius: 10px 10px 0 0;
+}
+.manage .manage-title h4 {
+  margin-left: 30px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 600;
+}
+.manage .manage-title button {
+  border-radius: 8px;
+  background-color: #003ac5;
+  background-image: linear-gradient(45deg, #003ac5 0%, #FC00FF 100%);
+  border: 0px;
+  padding: 10px 10px;
+  margin-right: 20px;
+  color: white;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 700;
+}
+.manage .manage-title button:hover {
+  color: rgb(0, 0, 0);
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  transition: all 0.5s;
+}
+.manage .manage-content th {
+  padding: 20px 60px;
+}
+.manage .manage-content #btn-delete {
+  background-color: #ff813d;
+  background-image: linear-gradient(147deg, #ff7f3b 0%, #FF2525 74%);
+  border-radius: 8px;
+  border: 0px;
+  padding: 10px 10px;
+  margin-right: 20px;
+  color: white;
+  transition: all 0.5s;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 700;
+}
+.manage .manage-content #btn-delete:hover {
+  background-color: hsl(21, 100%, 62%);
+  background-image: linear-gradient(147deg, hsla(21, 100%, 62%, 0.1) 0%, hsla(0, 100%, 57%, 0.1) 74%);
+  color: black;
+}
+.manage .manage-content #btn-edit {
+  background-color: rgb(251, 215, 0);
+  background-image: linear-gradient(90deg, #fbd700 0%, rgb(247, 168, 28) 100%);
+  border-radius: 8px;
+  border: 0px;
+  padding: 10px 10px;
+  margin-right: 20px;
+  color: white;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 700;
+}
+.manage .manage-content #btn-edit:hover {
+  background-color: #fbd700;
+  background-image: linear-gradient(90deg, hsla(51, 100%, 49%, 0.1) 0%, hsla(38, 93%, 54%, 0.1) 100%);
+  color: black;
+}
+
+.modal .modal-header {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+.modal .modal-header .modal-title {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+  transform: translateX(56.5%);
+}
+.modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.modal .modal-body .inp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border-radius: 7px;
+  border: solid 1px rgb(194, 188, 188);
+}
+.modal .modal-body .inp input {
+  width: 400px;
+  height: 39px;
+  border: 0px;
+  padding-left: 10px;
+  outline: none;
+}
+.modal .modal-body .inp i {
+  background-color: #FBDA61;
+  background-image: linear-gradient(-135deg, #FBDA61 0%, #FF5ACD 100%);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 9px;
+  border-radius: 7px 0 0 7px;
+}
+.modal .modal-body .inp select {
+  width: 400px;
+  border: 0px;
+  height: 40px;
+  color: #757575;
+  outline: none;
+  padding: 9px;
 }
 
 .themes {

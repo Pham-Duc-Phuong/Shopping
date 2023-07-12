@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Shopping | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website</title>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -61,14 +62,15 @@
             align-items-start">
                 <div class="header-logo">
                     <a href="./index.html"><button class="btn d-flex" type="button"><img src="./img/placeholder.png"
-                            alt=""><span>Shopping</span></button></a>
+                                alt=""><span>Shopping</span></button></a>
                 </div>
                 <nav class="navbar">
                     <div class="navbar-top">
                         <form class="d-flex" role="search">
                             <input class="form-control" type="search" placeholder="7/7 voucher giảm lên đến 50%"
                                 aria-label="Search">
-                            <button class="btn .cart-button" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <button class="btn .cart-button" type="button"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
                     <div class="navbar-bot">
@@ -88,68 +90,128 @@
             </div>
         </div>
     </header>
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Management</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="inp">
+                            <i class="fa-solid fa-box-open"></i><input type="text" placeholder="Name product">
+                        </div>
+                        <div class="inp">
+                            <i class="fa-solid fa-dollar-sign"></i><input type="number" placeholder="Price">
+                        </div>
+                        <div class="inp">
+                            <i class="fa-solid fa-camera-retro"></i><input type="text" placeholder="Photo">
+                        </div>
+                        <div class="inp">
+                            <label for="brand"><i class="fa-regular fa-comments"></i></label>
+                            <select name="brand" id="">
+                                <option value="Status">Status</option>
+                                <option value="Stocking">Stocking</option>
+                                <option value="Out Of Stock">Out Of Stock</option>
+                            </select>
+                        </div>
+                        <div class="inp">
+                            <label for="brand"><i class="fa-solid fa-signature"></i></label>
+                            <select name="brand" id="">
+                                <option value="Select brand">Select brand</option>
+                                <option value="Samsung">Samsung</option>
+                                <option value="Apple">Apple</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="manage themes">
         <div class="container">
             <div class="manage-title">
                 <h4>Management</h4>
-                <button>+ Add Product</button>
+                <button id="btn-add" type="button" data-bs-toggle="modal" data-bs-target="#myModal">+ Add
+                    Product</button>
+            </div>
+            <div class="manage-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Photo</th>
+                            <th>Status</th>
+                            <th><i class="fa-solid fa-gear"></i> Action
+                                <button id="btn-edit"><i class="fa-solid fa-pen"></i> Edit</button>
+                                <button id="btn-delete"><i class="fa-solid fa-trash-can"></i> Delete</button>
+                            </th>
+                        </tr>
+                    </thead>
+                </table>
             </div>
         </div>
-
     </section>
     <footer>
         <div class="container py-4">
-          <div class="row">
-            <div class="footer-post footer-left pl-lg-5 pl-md-3 pb-md-5 col-lg-4 col-md-12">
-              <h3>FIND US</h3>
-              <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
-              <p><a href="tel:+12 23456790">Phone: +12 23456790</a></p>
-              <p><a href="mailto:info@example.com">Email: info@example.com</a></p>
-              <p><a href="tel:+ 11 367 21890">Fax: + 11 367 21890</a></p>
-            </div>
-            <div class="footer-post footer-middle pb-md-5 col-lg-4 col-md-12">
-                <div class="logo d-flex align-items-center">
-                    <img src="./img/placeholder.png"
-                            alt=""><span>Shopping</span>
+            <div class="row">
+                <div class="footer-post footer-left pl-lg-5 pl-md-3 pb-md-5 col-lg-4 col-md-12">
+                    <h3>FIND US</h3>
+                    <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+                    <p><a href="tel:+12 23456790">Phone: +12 23456790</a></p>
+                    <p><a href="mailto:info@example.com">Email: info@example.com</a></p>
+                    <p><a href="tel:+ 11 367 21890">Fax: + 11 367 21890</a></p>
                 </div>
-              <p class="mt-4 mb-0">Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis ornare,
-                euismod ligul
-                aeget, enenatis dui.</p>
-              <p class="mt-5 mb-0">© 2023 Shopping. All Rights Reserved | WordPress Theme by<span><a class="W3Layouts"
-                    href="#"> BOOTCAMP 47</a></span></p>
-            </div>
-            <div class="footer-post pb-md-5 col-lg-4 col-md-12">
-              <h3>NEWSLETTER</h3>
-              <p>Subscribe to our mailing list and get updates to your email inbox.</p>
-              <form class="d-flex" action="">
-                <input type="text" placeholder="Email Address">
-                <button class="btn" type="button"><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
-              </form>
-              <div class="footer-social d-flex align-items-center pt-2 mt-4">
-                <div class="social-bg max-width">
-                  <div class="social-right">
-                    <a href="#">
-                      <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-google-plus-g"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
+                <div class="footer-post footer-middle pb-md-5 col-lg-4 col-md-12">
+                    <div class="logo d-flex align-items-center">
+                        <img src="./img/placeholder.png" alt=""><span>Shopping</span>
+                    </div>
+                    <p class="mt-4 mb-0">Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget
+                        turpis ornare,
+                        euismod ligul
+                        aeget, enenatis dui.</p>
+                    <p class="mt-5 mb-0">© 2023 Shopping. All Rights Reserved | WordPress Theme by<span><a
+                                class="W3Layouts" href="#"> BOOTCAMP 47</a></span></p>
                 </div>
-              </div>
+                <div class="footer-post pb-md-5 col-lg-4 col-md-12">
+                    <h3>NEWSLETTER</h3>
+                    <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+                    <form class="d-flex" action="">
+                        <input type="text" placeholder="Email Address">
+                        <button class="btn" type="button"><span class="fa fa-paper-plane"
+                                aria-hidden="true"></span></button>
+                    </form>
+                    <div class="footer-social d-flex align-items-center pt-2 mt-4">
+                        <div class="social-bg max-width">
+                            <div class="social-right">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </footer>
+    </footer>
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
@@ -159,4 +221,5 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
