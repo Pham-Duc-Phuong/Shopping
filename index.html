@@ -51,10 +51,12 @@
                     <ul>
                         <li><a href="#"><i class="fa-solid fa-bell"></i> Thông Báo</a></li>
                         <li><a href="#"><i class="fa-solid fa-circle-question"></i> Hồ Sơ</a></li>
-                        <li><a href="#"><i class="fa-solid fa-globe"></i> Tiếng Viết <i
+                        <li><a href="#"><i class="fa-solid fa-globe"></i> Tiếng Việt <i
                                     class="fa-solid fa-chevron-down"></i></a></li>
-                        <li><a href="#">Đăng Ký</a></li>|
-                        <li><a href="#">Đăng Nhập</a></li>
+                        <li><button id="btn-register" class="button-register" type="button" data-bs-toggle="modal"
+                                data-bs-target="#myModal-register">Đăng Ký</button></li>|
+                        <li><button id="btn-login" class="button-login" type="button" data-bs-toggle="modal"
+                                data-bs-target="#myModal-login">Đăng Nhập</button></li>
                     </ul>
                 </div>
             </div>
@@ -563,6 +565,63 @@
             <a class="BACKTOTOP" href="#"><i class="fa fa-arrow-up"></i></a>
         </div>
     </footer>
+    <section class="all-modal">
+        <div class="modal fade" id="myModal-register" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title modal-title-register">Register</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="inp">
+                                <i class="fa-solid fa-envelope"></i><input type="text" placeholder="Email">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-phone"></i><input type="number" placeholder="Phone">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-user"></i><input type="text" placeholder="User Name">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Password">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Enter the password">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Register</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal-login" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title modal-title-login">login</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="inp">
+                                <i class="fa-solid fa-user"></i><input type="text" placeholder="User Name">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Password">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Login</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="

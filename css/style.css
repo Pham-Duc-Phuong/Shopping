@@ -127,7 +127,7 @@ footer .footer-post .footer-social i:hover {
 header {
   background-color: #4158D0;
   background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 14px;
   font-weight: 400;
 }
@@ -147,6 +147,13 @@ header a {
 }
 header .login {
   padding-top: 8px;
+}
+header .login_right button {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 400;
+  background-color: transparent;
+  border: 0;
 }
 header .loginSearch img {
   width: 50px;
@@ -486,11 +493,14 @@ header .loginSearch .navbar li {
 .manage .manage-content {
   padding-bottom: 40px;
 }
+.manage .manage-content table {
+  margin-bottom: 20px;
+}
 .manage .manage-content th {
-  padding: 20px 45px 0;
+  padding: 20px 60px 0;
 }
 .manage .manage-content td {
-  padding: 20px 45px;
+  padding: 20px 60px;
 }
 .manage .manage-content tr {
   padding: 20px;
@@ -539,12 +549,14 @@ header .loginSearch .navbar li {
   color: white;
   font-size: 35px;
   font-weight: 700;
-  transform: translateX(56.5%);
+  text-transform: capitalize;
 }
 .modal .modal-body {
   display: flex;
   flex-direction: column;
   align-items: start;
+  padding-bottom: 0;
+  padding-top: 30px;
 }
 .modal .modal-body .inp {
   display: flex;

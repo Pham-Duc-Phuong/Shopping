@@ -5,7 +5,7 @@
 
         .modal-title {
             @include styleText (white, 35px, 700);
-            transform: translateX(56.5%);
+            text-transform: capitalize;
         }
     }
 
@@ -13,7 +13,8 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        
+        padding-bottom: 0;
+        padding-top: 30px;
         .inp {
             display: flex;
             align-items: center;

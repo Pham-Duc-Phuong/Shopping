@@ -51,18 +51,20 @@
                     <ul>
                         <li><a href="#"><i class="fa-solid fa-bell"></i> Thông Báo</a></li>
                         <li><a href="#"><i class="fa-solid fa-circle-question"></i> Hồ Sơ</a></li>
-                        <li><a href="#"><i class="fa-solid fa-globe"></i> Tiếng Viết <i
+                        <li><a href="#"><i class="fa-solid fa-globe"></i> Tiếng Việt <i
                                     class="fa-solid fa-chevron-down"></i></a></li>
-                        <li><a href="#">Đăng Ký</a></li>|
-                        <li><a href="#">Đăng Nhập</a></li>
+                        <li><button id="btn-register" class="button-register" type="button" data-bs-toggle="modal"
+                                data-bs-target="#myModal-register">Đăng Ký</button></li>|
+                        <li><button id="btn-login" class="button-login" type="button" data-bs-toggle="modal"
+                                data-bs-target="#myModal-login">Đăng Nhập</button></li>
                     </ul>
                 </div>
             </div>
             <div class="loginSearch d-flex justify-content-between
             align-items-start">
                 <div class="header-logo">
-                    <a href="./index.html"><button class="btn d-flex" type="button"><img src="./img/placeholder.png"
-                                alt=""><span>Shopping</span></button></a>
+                    <button class="btn d-flex" type="reset"><img src="./img/placeholder.png"
+                            alt=""><span>Shopping</span></button>
                 </div>
                 <nav class="navbar">
                     <div class="navbar-top">
@@ -86,50 +88,105 @@
                         </ul>
                     </div>
                 </nav>
-                <button class="btn btn-shopping" type="button"><i class="fa-solid fa-cart-shopping"></i></button>
+                <a href="./admin.html"><button class="btn btn-shopping" type="button"><i
+                            class="fa-solid fa-cart-shopping"></i></button></a>
             </div>
         </div>
     </header>
-    <div class="modal fade" id="myModal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Management</h5>
-                </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="inp">
-                            <i class="fa-solid fa-box-open"></i><input type="text" placeholder="Name product">
-                        </div>
-                        <div class="inp">
-                            <i class="fa-brands fa-shopify"></i><input type="number" placeholder="Quantity">
-                        </div>
-                        <div class="inp">
-                            <i class="fa-solid fa-dollar-sign"></i><input type="number" placeholder="Price">
-                        </div>
-                        <div class="inp">
-                            <i class="fa-solid fa-camera-retro"></i><input type="text" placeholder="Photo">
-                        </div>
-                        <div class="inp">
-                            <i class="fa-regular fa-comments"></i></i><input type="text" placeholder="Descreption">
-                        </div>
-                        <div class="inp">
-                            <label for="brand"><i class="fa-solid fa-signature"></i></label>
-                            <select name="brand" id="">
-                                <option value="Select brand">Select brand</option>
-                                <option value="Samsung">Samsung</option>
-                                <option value="Apple">Apple</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+    <section class="all-modal">
+        <div class="modal fade" id="myModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Management</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="inp">
+                                <i class="fa-solid fa-box-open"></i><input type="text" placeholder="Name Product">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-brands fa-shopify"></i><input type="number" placeholder="Quantity">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-dollar-sign"></i><input type="number" placeholder="Price">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-camera-retro"></i><input type="text" placeholder="Photo">
+                            </div>
+                            <div class="inp">
+                                <label for="brand"><i class="fa-solid fa-signature"></i></label>
+                                <select name="brand" id="">
+                                    <option value="Select Brand">Select Brand</option>
+                                    <option value="Samsung">Samsung</option>
+                                    <option value="Apple">Apple</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="modal fade" id="myModal-register" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title modal-title-register">Register</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="inp">
+                                <i class="fa-solid fa-envelope"></i><input type="text" placeholder="Email">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-phone"></i><input type="number" placeholder="Phone">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-user"></i><input type="text" placeholder="User Name">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Password">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Enter the password">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Register</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="myModal-login" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title modal-title-login">login</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="inp">
+                                <i class="fa-solid fa-user"></i><input type="text" placeholder="User Name">
+                            </div>
+                            <div class="inp">
+                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Password">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Login</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="manage themes">
         <div class="container">
             <div class="manage-title">
@@ -146,11 +203,11 @@
                             <th>Photo</th>
                             <th>Quantity</th>
                             <th>Price</th>
-                            <th>Status</th>
                             <th><i class="fa-solid fa-gear"></i> Action</th>
                             <th>
                                 <button id="btn-edit" class="button-edit"><i class="fa-solid fa-pen"></i> Edit</button>
-                                <button id="btn-delete" class="button-delete"><i class="fa-solid fa-trash-can"></i> Delete</button>
+                                <button id="btn-delete" class="button-delete"><i class="fa-solid fa-trash-can"></i>
+                                    Delete</button>
                             </th>
                         </tr>
                     </thead>
