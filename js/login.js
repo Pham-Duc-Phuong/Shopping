@@ -3,6 +3,20 @@ function getElement(selector) {
 }
 var dskh = new DSKH()
 function getinfoKH() {
+    var account = getElement('#account-add').value;
+    var email = getElement('#email-add').value;
+    var phone = getElement('#phone-add').value;
+    var pass = getElement('#pass-add').value;
+    var khach = new Khach(account, email, phone, pass);
+    return khach;
+}
+getElement('#btn-register-modaladd').onclick = function () {
+    var khach = getinfoKH()
+    dskh.arrKH.push(khach)
+    renderdata()
+    setLocalStorage()
+}
+function getinfoKH1() {
     var account = getElement('#account-register').value;
     var email = getElement('#email-register').value;
     var phone = getElement('#phone-register').value;
@@ -10,13 +24,12 @@ function getinfoKH() {
     var khach = new Khach(account, email, phone, pass);
     return khach;
 }
-getElement('#btn-register-2').onclick = function info() {
-    var khach = getinfoKH()
+getElement('#btn-register-modalreg').onclick = function () {
+    var khach = getinfoKH1()
     dskh.arrKH.push(khach)
     renderdata()
     setLocalStorage()
 }
-
 
 // render danh sách
 function renderdata(arrKH = dskh.arrKH) {
@@ -56,7 +69,7 @@ function getDataLocalStorage() {
         var khach = new Khach(kh.account, kh.email, kh.phone, kh.pass)
         arr.push(khach)
     }
-    dskh.arrkh = arr
+    dskh.arrKH = arr
     renderdata()
 }
 getDataLocalStorage()
@@ -70,10 +83,10 @@ function deteleData(A) {
 function updateData(account) {
     var index = dskh.timKH(account)
     var kh = dskh.arrKH[index]
-    var account = getElement('#account-add').value
-    var email = getElement('#email-add').value
-    var phone = getElement('#phone-add').value
-    var pass = getElement('#pass-add').value
+    getElement('#account-add').value = kh.account;
+    getElement('#email-add').value = kh.email;
+    getElement('#phone-add').value = kh.phone;
+    getElement('#pass-add').value = kh.pass;
 }
 getElement('#btn-update').onclick = function(){
     var khach = getinfoKH()
