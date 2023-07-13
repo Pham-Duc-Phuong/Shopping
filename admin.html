@@ -66,7 +66,7 @@
             align-items-start">
                 <div class="header-logo">
                     <a href="./index.html"><button class="btn d-flex" type="reset"><img src="./img/placeholder.png"
-                            alt=""><span>Shopping</span></button></a>
+                                alt=""><span>Shopping</span></button></a>
                 </div>
                 <nav class="navbar">
                     <div class="navbar-top">
@@ -99,7 +99,8 @@
         <div class="container">
             <div class="manage-title">
                 <h4>Quản lý sản phẩm</h4>
-                <button id="btn-add-nodal" type="button" data-bs-toggle="modal" data-bs-target="#myModal">+ Thêm sản phẩm</button>
+                <button id="btn-add-nodal" type="button" data-bs-toggle="modal" data-bs-target="#myModal">+ Thêm sản
+                    phẩm</button>
             </div>
             <div class="manage-content">
                 <table>
@@ -120,7 +121,6 @@
                         </tr>
                     </thead>
                 </table>
-                <hr>
             </div>
         </div>
     </section>
@@ -216,6 +216,7 @@
                         <button id="btn-add" type="button" class="btn btn-active ">Thêm sản phẩm</button>
                         <button id="btn-update" type="button" class="btn btn-active ">Cập nhật</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -228,24 +229,24 @@
                     <div class="modal-body">
                         <form action="">
                             <div class="inp">
-                                <i class="fa-solid fa-envelope"></i><input type="email" placeholder="Email">
+                                <i class="fa-solid fa-envelope"></i><input id="email-register" type="email" placeholder="Email">
                             </div>
                             <div class="inp">
-                                <i class="fa-solid fa-phone"></i><input type="number" placeholder="Số điện thoại">
+                                <i class="fa-solid fa-phone"></i><input id="phone-register" type="number" placeholder="Số điện thoại">
                             </div>
                             <div class="inp">
-                                <i class="fa-solid fa-user"></i><input type="text" placeholder="Tên đăng nhập">
+                                <i class="fa-solid fa-user"></i><input id="account-register" type="text" placeholder="Tên đăng nhập">
                             </div>
                             <div class="inp">
-                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Mật khẩu">
+                                <i class="fa-solid fa-key"></i><input id="pass-register" type="password" placeholder="Mật khẩu">
                             </div>
                             <div class="inp">
-                                <i class="fa-solid fa-key"></i><input type="text" placeholder="Nhập lại mật khẩu">
+                                <i class="fa-solid fa-key"></i><input type="password" placeholder="Nhập lại mật khẩu">
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-active btn-primary">Đăng ký</button>
+                        <button id="btn-register-modalreg" type="button" class="btn btn-active btn-primary">Đăng ký</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
                     </div>
                 </div>
@@ -260,7 +261,7 @@
                     <div class="modal-body">
                         <form action="">
                             <div class="inp">
-                                <i class="fa-solid fa-user"></i><input type="text" placeholder="Tên đăng nhập">
+                                <i id="input-login-modal" class="fa-solid fa-user"></i><input type="text" placeholder="Tên đăng nhập">
                             </div>
                             <div class="inp">
                                 <i class="fa-solid fa-key"></i><input type="text" placeholder="Mật khẩu">
@@ -268,7 +269,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-active btn-primary">Đăng nhập</button>
+                        <button id="btn-login-modal" type="button" class="btn btn-active btn-primary">Đăng nhập</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
                     </div>
                 </div>

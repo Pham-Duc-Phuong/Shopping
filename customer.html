@@ -54,7 +54,7 @@
                         <li><a href="#"><i class="fa-solid fa-globe"></i> Tiếng Việt <i
                                     class="fa-solid fa-chevron-down"></i></a></li>
                     </ul>
-                    <div class="login-btn d-flex justify-content-between align-items-start">
+                    <div id="login-right-btn" class="login-btn d-flex justify-content-between align-items-start">
                         <button id="btn-register" class="button-register" type="button" data-bs-toggle="modal"
                             data-bs-target="#myModal-register">Đăng Ký</button>|
                         <button id="btn-login" class="button-login" type="button" data-bs-toggle="modal"
@@ -254,7 +254,7 @@
                     <div class="modal-body">
                         <form action="">
                             <div class="inp">
-                                <i class="fa-solid fa-user"></i><input type="text" placeholder="Tên đăng nhập">
+                                <i id="input-login-modal" class="fa-solid fa-user"></i><input type="text" placeholder="Tên đăng nhập">
                             </div>
                             <div class="inp">
                                 <i class="fa-solid fa-key"></i><input type="text" placeholder="Mật khẩu">
@@ -262,7 +262,7 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-active btn-primary">Đăng nhập</button>
+                        <button id="btn-login-modal" type="button" class="btn btn-active btn-primary">Đăng nhập</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
                     </div>
                 </div>

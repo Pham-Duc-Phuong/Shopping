@@ -23,10 +23,9 @@ function DSKH() {
     // Cập nhật khách hàng
     this.UpdateKH = function (A) {
         var index = this.timKH(A.account)
-        console.log(A)
         if (index !== -1) {
             this.arrKH[index] = A
         }
     }
-
+    // Đăng nhập
 }
