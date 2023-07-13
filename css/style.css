@@ -504,6 +504,9 @@ header .loginSearch .navbar li {
   max-width: 100%;
   text-align: center;
 }
+.manage .manage-content thead {
+  border-bottom: solid 1px rgb(145, 145, 145);
+}
 .manage .manage-content th {
   padding: 20px 0 0 0;
 }
@@ -515,13 +518,15 @@ header .loginSearch .navbar li {
   display: grid;
   grid-template-columns: 0.2fr 1.1fr 1.2fr repeat(3, 1fr) 1.5fr;
 }
+.manage .manage-content.manage-customer tr {
+  grid-template-columns: repeat(4, 1fr) 2fr;
+}
 .manage .manage-content .button-delete {
   background-color: #ff813d;
   background-image: linear-gradient(147deg, #ff7f3b 0%, #FF2525 74%);
   border-radius: 8px;
   border: 0px;
   padding: 10px 10px;
-  margin-right: 20px;
   color: white;
   transition: all 0.5s;
   color: rgb(255, 255, 255);
@@ -539,7 +544,7 @@ header .loginSearch .navbar li {
   border-radius: 8px;
   border: 0px;
   padding: 10px 10px;
-  margin-right: 20px;
+  margin-right: 10px;
   color: white;
   color: rgb(255, 255, 255);
   font-size: 15px;
@@ -605,6 +610,9 @@ header .loginSearch .navbar li {
   background-color: #6c56cb;
   border: solid 1px transparent;
   color: white;
+}
+.modal .modal-footer #btn-save {
+  background-color: #D164B4;
 }
 
 .themes {

@@ -1,40 +1,98 @@
-function getElement (selector) {
+function getElement(selector) {
     return document.querySelector(selector)
 }
 var dskh = new DSKH()
-function getinfoKH(){
-    var account = getElement('#account')
-    var email = getElement('#email')
-    var phone = getElement('#phone')
-    var pass = getElement('#pass')
-    var khach = new Khach (account,email,phone,pass)
-    return khach
+function getinfoKH() {
+    var account = getElement('#account').value;
+    var email = getElement('#email').value;
+    var phone = getElement('#phone').value;
+    var pass = getElement('#pass').value;
+    var khach = new Khach(account, email, phone, pass);
+    return khach;
 }
-getElement('#btn-register').onclick = function () {
-    var nhanvien = getinfoKH()
-    dsnv.arrNV.push(khach)
+function getinfoKH_1 () {
+    var account = getElement('#account-1').value;
+    var email = getElement('#email-1').value;
+    var phone = getElement('#phone-1').value;
+    var pass = getElement('#pass-1').value;
+    var khach = new Khach(account, email, phone, pass);
+    return khach;
+}
+getElement('#btn-register-1').onclick = function info() {
+    var khach = getinfoKH()
+    dskh.arrKH.push(khach)
     console.log('khach', khach)
     renderdata()
     setLocalStorage()
 }
+getElement('#btn-register-2').onclick = function info() {
+    var khach = getinfoKH()
+    dskh.arrKH.push(khach)
+    console.log('khach', khach)
+    renderdata()
+    setLocalStorage()
+}
+
 // render danh sách
-function renderdata(arrNV = dsnv.arrNV) {
+function renderdata(arrKH = dskh.arrKH) {
     var content = ''
-    for (var i = 0; i < arrNV.length; i++) {
-        var kh = dsnv.arrNV[i]
-        content += `$<tr>
-                        <td>${kh.accountNV}</td>
-                        <td>${kh.tenNV}</td>
+    for (var i = 0; i < arrKH.length; i++) {
+        var kh = dskh.arrKH[i]
+        content += `<tr>
+                        <td>${kh.account}</td>
                         <td>${kh.email}</td>
-                        <td>${kh.date}</td>
-                        <td>${kh.posi}</td>
-                        <td>${kh.calWage()}</td>
-                        <td>${kh.rank()}</td>
+                        <td>${kh.phone}</td>
+                        <td>${kh.pass}</td>
                         <td>
-                            <button class='btn btn-success mb-3' onclick="updateData('${nv.accountNV}')">Edit</button>
-                            <button class='btn btn-danger' onclick="deteleData('${nv.accountNV}')">Delete</button>
+                            <div class='d-flex justify-content-center align-items-center'>
+                            <button class='btn button-edit' type="button" data-bs-toggle="modal"
+                            data-bs-target="#myModal-add" onclick="updateData('${kh.account}')"><i class="fa-solid fa-pen"></i> Chỉnh sửa</button>
+                            <button class='btn button-delete' onclick="deteleData('${kh.account}')"><i class="fa-solid fa-trash-can"></i>
+                            Xóa</button>
+                            </div>
                         </td>
-                    $</tr>`
+                    </tr>`
     }
     getElement('#tableDanhSach').innerHTML = content
+}
+// lưu vào localStorage
+function setLocalStorage() {
+    var kh = JSON.stringify(dskh.arrKH)
+    localStorage.setItem('dskh', kh)
+}
+// get data from localStorage
+function getDataLocalStorage() {
+    var data = localStorage.getItem('dskh');
+    var parseData = JSON.parse(data);
+    var arr = [];
+    // b2:  duyệt mảng được lấy từ local
+    for (var i = 0; i < parseData.length; i++) {
+        var kh = parseData[i]
+        var khach = new Khach(kh.account, kh.email, kh.phone, kh.pass)
+        arr.push(khach)
+    }
+    dskh.arrkh = arr
+    renderdata()
+}
+getDataLocalStorage()
+// Xóa data dữ liệu
+function deteleData(A) {
+    dskh.xoaKH(A)
+    renderdata()
+    setLocalStorage()
+}
+// Edit data
+function updateData(account) {
+    var index = dskh.timKH(account)
+    var kh = dskh.arrKH[index]
+    var account = getElement('#account').value
+    var email = getElement('#email').value
+    var phone = getElement('#phone').value
+    var pass = getElement('#pass').value
+}
+getElement('#btn-update').onclick = function(){
+    var khach = getinfoKH()
+    dskh.UpdateKH(khach)
+    renderdata()
+    setLocalStorage()
 }
