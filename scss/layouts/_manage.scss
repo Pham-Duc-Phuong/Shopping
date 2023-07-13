@@ -63,8 +63,7 @@
         }
         &.manage-customer{
             tr{
-                grid-template-columns: 1fr 2fr 1fr 1fr 2fr;
-                
+                grid-template-columns: 1fr 1.75fr 0.75fr 0.75fr 1.25fr !important;
             }
         }
         .button-delete {

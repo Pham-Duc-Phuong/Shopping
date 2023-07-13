@@ -80,8 +80,8 @@ function deteleData(A) {
     setLocalStorage()
 }
 // Edit data
-function updateData(account) {
-    var index = dskh.timKH(account)
+function updateData(masoKH) {
+    var index = dskh.timKH(masoKH)
     var kh = dskh.arrKH[index]
     getElement('#account-add').value = kh.account;
     getElement('#email-add').value = kh.email;
