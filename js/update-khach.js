@@ -2,21 +2,21 @@ function getElement(selector) {
     return document.querySelector(selector)
 }
 var dskh = new DSKH()
-function getinfoKH() {
-    var account = getElement('#account-register').value;
-    var email = getElement('#email-register').value;
-    var phone = getElement('#phone-register').value;
-    var pass = getElement('#pass-register').value;
+function getinfoKHadd() {
+    var account = getElement('#account-add').value;
+    var email = getElement('#email_add').value;
+    var phone = getElement('#phone_add').value;
+    var pass = getElement('#pass_add').value;
     var khach = new Khach(account, email, phone, pass);
     return khach;
 }
-getElement('#btn-register-2').onclick = function info() {
-    var khach = getinfoKH()
+
+getElement('#btn-register-1').onclick = function info() {
+    var khach = getinfoKHadd()
     dskh.arrKH.push(khach)
     renderdata()
     setLocalStorage()
 }
-
 
 // render danh sách
 function renderdata(arrKH = dskh.arrKH) {
@@ -76,7 +76,7 @@ function updateData(account) {
     var pass = getElement('#pass-add').value
 }
 getElement('#btn-update').onclick = function(){
-    var khach = getinfoKH()
+    var khach = getinfoKHadd()
     dskh.UpdateKH(khach)
     renderdata()
     setLocalStorage()
