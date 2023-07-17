@@ -6,6 +6,7 @@ function DSKH() {
     }
     // Tìm khách hàng
     this.timKH = function (A) {
+        debugger
         for (var i = 0; i < this.arrKH.length; i++) {
             var kh = this.arrKH[i].account;
             if (kh === A) {

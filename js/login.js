@@ -37,6 +37,7 @@ function renderdata(arrKH = dskh.arrKH) {
     for (var i = 0; i < arrKH.length; i++) {
         var kh = dskh.arrKH[i]
         content += `<tr>
+                        <td>${i+1}</td>
                         <td>${kh.account}</td>
                         <td>${kh.email}</td>
                         <td>${kh.phone}</td>
@@ -94,3 +95,16 @@ getElement('#btn-update').onclick = function(){
     renderdata()
     setLocalStorage()
 }
+// getElement('#txtSearch').addEventListener('#btn-search-customer', function(){
+//     var arrSearch = []
+//     var valueSearch = getElement('#txtSearch').value.toLowerCase()
+//     console.log('valueSearch', valueSearch)
+//     for(var i = 0 ; i < dskh.arrKH.length ; i++){
+//         var tenKH = dssv.arrKH[i].account.toLowerCase()
+//         if(tenKH.indexOf(valueSearch) !== -1){
+//             arrSearch.push(dskh.arrKH[i])}
+//         }
+//         console.log('arrSearch', arrSearch)
+//         renderdssv(arrSearch)
+        
+//     })
