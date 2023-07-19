@@ -10,12 +10,6 @@ function getinfoKH() {
     var khach = new Khach(account, email, phone, pass);
     return khach;
 }
-getElement('#btn-register-modaladd').onclick = function () {
-    var khach = getinfoKH()
-    dskh.arrKH.push(khach)
-    renderdata()
-    setLocalStorage()
-}
 function getinfoKH1() {
     var account = getElement('#account-register').value;
     var email = getElement('#email-register').value;
@@ -23,6 +17,12 @@ function getinfoKH1() {
     var pass = getElement('#pass-register').value;
     var khach = new Khach(account, email, phone, pass);
     return khach;
+}
+getElement('#btn-register-modaladd').onclick = function () {
+    var khach = getinfoKH()
+    dskh.arrKH.push(khach)
+    renderdata()
+    setLocalStorage()
 }
 getElement('#btn-register-modalreg').onclick = function () {
     var khach = getinfoKH1()

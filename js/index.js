@@ -33,13 +33,13 @@ function getProductList(){
                 <td>${prd.type}</td>
                 <td>
                     <button 
-                        class ='btn btn-danger' 
+                        class ='btn button-delete' 
                         onclick="deleteProduct(${prd.id})"
                     >
                         Delete
                     </button>
                     <button 
-                        class ='btn btn-success ml-3' 
+                        class ='btn button-edit' 
                         data-bs-toggle="modal" 
                         data-bs-target="#myModal"
                         onclick="updateProduct(${prd.id})"
