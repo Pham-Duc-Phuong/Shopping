@@ -10,6 +10,6 @@ getElement('#btn-closeCart').onclick = function(){
 getElement('#btn-closeCart').onclick = function(){
     document.querySelector('.buying').classList.remove("show-buying")
 }
-document.getElementsByClassName(".btn-minus").onclick = function (){
+// document.getElementsByClassName(".btn-minus").onclick = function (){
 
-}
+// }
