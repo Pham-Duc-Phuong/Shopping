@@ -35,9 +35,9 @@ getElement('#btn-register-modalreg').onclick = function () {
 function renderdata(arrKH = dskh.arrKH) {
     var content = ''
     for (var i = 0; i < arrKH.length; i++) {
-        var kh = dskh.arrKH[i]
+        var kh = arrKH[i]
         content += `<tr>
-                        <td>${i+1}</td>
+                        <td>${i + 1}</td>
                         <td>${kh.account}</td>
                         <td>${kh.email}</td>
                         <td>${kh.phone}</td>
@@ -89,22 +89,22 @@ function updateData(masoKH) {
     getElement('#phone-add').value = kh.phone;
     getElement('#pass-add').value = kh.pass;
 }
-getElement('#btn-update').onclick = function(){
+getElement('#btn-update').onclick = function () {
     var khach = getinfoKH()
     dskh.UpdateKH(khach)
     renderdata()
     setLocalStorage()
-}
-// getElement('#txtSearch').addEventListener('#btn-search-customer', function(){
-//     var arrSearch = []
-//     var valueSearch = getElement('#txtSearch').value.toLowerCase()
-//     console.log('valueSearch', valueSearch)
-//     for(var i = 0 ; i < dskh.arrKH.length ; i++){
-//         var tenKH = dssv.arrKH[i].account.toLowerCase()
-//         if(tenKH.indexOf(valueSearch) !== -1){
-//             arrSearch.push(dskh.arrKH[i])}
-//         }
-//         console.log('arrSearch', arrSearch)
-//         renderdssv(arrSearch)
-        
-//     })
+};
+
+getElement('#txtSearch').addEventListener('keyup', function () {
+    var valueSearch = getElement('#txtSearch').value.toLowerCase()
+    var arrSearch = []
+    for (var i = 0; i < dskh.arrKH.length; i++) {
+        var tenKH = dskh.arrKH[i].account.toLowerCase()
+        if (tenKH.indexOf(valueSearch) !== -1) {
+            arrSearch.push(dskh.arrKH[i])
+        }
+    }
+    renderdata(arrSearch)
+
+});

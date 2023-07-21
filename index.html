@@ -367,7 +367,7 @@
                         <h6>999$</h6>
                         <div class="product-number">
                             <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
-                            <input type="number">
+                            <input type="number" value="0">
                             <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
@@ -381,7 +381,7 @@
                         <h6>999$</h6>
                         <div class="product-number">
                             <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
-                            <input type="number">
+                            <input type="number" value="0">
                             <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
@@ -395,7 +395,7 @@
                         <h6>999$</h6>
                         <div class="product-number">
                             <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
-                            <input type="number">
+                            <input type="number" value="0">
                             <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
@@ -409,7 +409,7 @@
                         <h6>999$</h6>
                         <div class="product-number">
                             <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
-                            <input type="number">
+                            <input type="number" value="0">
                             <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
@@ -424,7 +424,7 @@
                         <h6>999$</h6>
                         <div class="product-number">
                             <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
-                            <input type="number">
+                            <input type="number" value="0">
                             <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
@@ -444,7 +444,7 @@
                         <h6>999$</h6>
                         <div class="product-number">
                             <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
-                            <input type="number">
+                            <input type="number" value="0">
                             <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
@@ -458,7 +458,7 @@
                         <h6>999$</h6>
                         <div class="product-number">
                             <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
-                            <input type="number">
+                            <input type="number" value="0">
                             <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
@@ -472,7 +472,7 @@
                         <h6>999$</h6>
                         <div class="product-number">
                             <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
-                            <input type="number">
+                            <input type="number" value="0">
                             <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
@@ -486,7 +486,7 @@
                         <h6>999$</h6>
                         <div class="product-number">
                             <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
-                            <input type="number">
+                            <input type="number" value="0">
                             <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
@@ -500,7 +500,7 @@
                         <h6>999$</h6>
                         <div class="product-number">
                             <button class="btn btn-minus"><i class="fa-solid fa-minus"></i></button>
-                            <input type="number">
+                            <input type="number" value="0">
                             <button class="btn btn-plus"><i class="fa-solid fa-plus"></i></button>
                         </div>
                         <button class="btn btn-cart"><i class="fa-solid fa-cart-plus"></i>
@@ -512,6 +512,7 @@
         </div>
     </section>
     <footer>
+        <div class="cart-icon"><button id="btn-showCart"><i class="fa-solid fa-cart-plus"></i></div></button>
         <div class="container py-4">
             <div class="row">
                 <div class="footer-post footer-left pl-lg-5 pl-md-3 pb-md-5 col-lg-4 col-md-12">
@@ -615,7 +616,8 @@
                     <div class="modal-body">
                         <form action="">
                             <div class="inp">
-                                <i class="fa-solid fa-user"></i><input id="input-login-modal" type="text" placeholder="Tên đăng nhập">
+                                <i class="fa-solid fa-user"></i><input id="input-login-modal" type="text"
+                                    placeholder="Tên đăng nhập">
                             </div>
                             <div class="inp">
                                 <i class="fa-solid fa-key"></i><input type="text" placeholder="Mật khẩu">
@@ -623,13 +625,35 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button id="btn-login-modal" type="button" class="btn btn-active btn-primary"  data-bs-dismiss="modal">Đăng nhập</button>
+                        <button id="btn-login-modal" type="button" class="btn btn-active btn-primary"
+                            data-bs-dismiss="modal">Đăng nhập</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Thoát</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <aside class="buying" style="width: 280px;height: 400px;">
+        <div class="buying-content">
+            <button id="btn-closeCart"><i style="color: white;" class="fa-solid fa-xmark"></i></button>
+            <h3 style="text-align: center; font-weight: 700;" class="mb-3">Shopping carts</h3>
+            <div class="buying-item">
+                <a href="#"></a>
+                <div class="buying-item-mid">
+                    <p style="height: 25px; line-height: 15px;width: 140px;margin: 0 0 0 5px;">Macbook</p>
+                    <div class="d-flex align-items-start">
+                        <button class="btn btn-minus" class="btn"><i class="fa-solid fa-minus"></i></button>
+                        <input inputmode="numeric" type="number" value="0">
+                        <button class="btn btn-plus" class="btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+                <div class="buying-item-right d-flex flex-column align-items-center">
+                    <button><i class="fa-solid fa-trash-can"></i></button>
+                    <div class="cost"><span>16</span><span>$</span></div>
+                </div>
+            </div>
+        </div>
+    </aside>
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
@@ -681,14 +705,11 @@
             });
         });
     </script>
-    <script src="./js/khach.js"></script>
-    <script src="./js/dskh.js"></script>
-    <script src="./js/login.js"></script>
     <script src="./js/dangnhap.js"></script>
+    <script src="./js/Product.js/shoppingcart.js"></script>
     <!-- Axios -->
     <script src="./Model/product.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./js/index.js"></script>
 </body>
 
 </html>

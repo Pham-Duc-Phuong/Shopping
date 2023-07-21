@@ -35,7 +35,7 @@ function getProductList(){
                     <button 
                         class ='btn button-delete' 
                         onclick="deleteProduct(${prd.id})"
-                    >
+                    ><i class="fa-solid fa-trash-can"></i>
                         Delete
                     </button>
                     <button 
@@ -43,7 +43,7 @@ function getProductList(){
                         data-bs-toggle="modal" 
                         data-bs-target="#myModal"
                         onclick="updateProduct(${prd.id})"
-                    >
+                    ><i class="fa-solid fa-pen"></i>
                         Edit
                     </button>
                 </td>
